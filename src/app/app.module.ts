@@ -36,6 +36,18 @@ const myRoute: Routes = [
   {
     path: "viewAllFriends",
     component: ViewFriendsComponent
+  },
+  {
+    path: "employeeLogin",
+    component: EmployeeLoginComponent
+  },
+  {
+    path: "addCourses",
+    component:AddCourseComponent
+  },
+  {
+    path: "addFriends",
+    component: AddFriendComponent
   }
 
 ]
