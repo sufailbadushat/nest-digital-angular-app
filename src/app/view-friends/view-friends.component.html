@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
+                    <div class="card" style="height:250px;" >
+
+                        <div  class="card-body">
+                            <h5 class="card-title">Name: {{i.name}}</h5>
+                            <h5 class="card-title">friendName: {{i.friendName}}</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item font-monospace ">Nickname: {{i.friendNickName}}</li>
+                            <li class="list-group-item font-monospace">DescribeYourFriend: {{i.DescribeYourFriend}}</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
