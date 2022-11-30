@@ -16,6 +16,7 @@ import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { AddCourseComponent } from './add-course/add-course.component';
 
 const myRoute: Routes = [
   {
@@ -49,7 +50,8 @@ const myRoute: Routes = [
     ViewCoursesComponent,
     ViewFriendsComponent,
     NavAdminComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    AddCourseComponent
   ],
   imports: [
     BrowserModule,
