@@ -3,14 +3,33 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContactComponent } from './contact/contact.component';
+import { CarousalComponent } from './carousal/carousal.component';
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import { ViewCoursesComponent } from './view-courses/view-courses.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    GalleryComponent,
+    ContactComponent,
+    CarousalComponent,
+    AdminPortalComponent,
+    ViewCoursesComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
