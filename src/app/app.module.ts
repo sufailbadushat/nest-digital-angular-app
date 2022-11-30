@@ -49,6 +49,10 @@ const myRoute: Routes = [
   {
     path: "addFriends",
     component: AddFriendComponent
+  },
+  {
+    path: "employeeRegister",
+    component: EmployeeRegisterComponent
   }
 
 ]
