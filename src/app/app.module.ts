@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +12,23 @@ import { AdminPortalComponent } from './admin-portal/admin-portal.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
+import { NavAdminComponent } from './nav-admin/nav-admin.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const myRoute: Routes = [
+  {
+    path: "",
+    component: HomeComponent
+  },
+  {
+    path: "viewAllCourses",
+    component: ViewCoursesComponent
+  },
+  {
+    path: "viewAllFriends",
+    component: ViewFriendsComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -24,12 +40,15 @@ import { ViewFriendsComponent } from './view-friends/view-friends.component';
     CarousalComponent,
     AdminPortalComponent,
     ViewCoursesComponent,
-    ViewFriendsComponent
+    ViewFriendsComponent,
+    NavAdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myRoute)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
