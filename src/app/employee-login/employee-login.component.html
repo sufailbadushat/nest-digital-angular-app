@@ -7,14 +7,14 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
                     <label for="" class="form-label font-monospace">Employee Id</label>
-                    <input type="text" placeholder="employee id" class="form-control">
+                    <input name="employeeId" [(ngModel)]="employeeId" type="text" placeholder="employee id" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace ">Password</label>
-                    <input type="text" placeholder="password" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="text" placeholder="password" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button  class="btn btn-dark font-monospace py-1">Login</button>
+                    <button (click)="readValue()" class="btn btn-dark font-monospace py-1">Login</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
                     <a  class="font-monospace" routerLink="/employeeRegister">New employee?, Register here</a>
