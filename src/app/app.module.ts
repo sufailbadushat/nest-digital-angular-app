@@ -19,6 +19,7 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { NavEmployeeComponent } from './nav-employee/nav-employee.component';
+import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 
 const myRoute: Routes = [
   {
@@ -67,7 +68,8 @@ const myRoute: Routes = [
     EmployeeLoginComponent,
     AddCourseComponent,
     AddFriendComponent,
-    NavEmployeeComponent
+    NavEmployeeComponent,
+    EmployeeRegisterComponent
   ],
   imports: [
     BrowserModule,
