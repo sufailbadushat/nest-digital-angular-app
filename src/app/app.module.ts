@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarousalComponent } from './carousal/carousal.component';
+import { AdminPortalComponent } from './admin-portal/admin-portal.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { CarousalComponent } from './carousal/carousal.component';
     AboutComponent,
     GalleryComponent,
     ContactComponent,
-    CarousalComponent
+    CarousalComponent,
+    AdminPortalComponent
   ],
   imports: [
     BrowserModule,
