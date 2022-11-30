@@ -9,6 +9,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarousalComponent } from './carousal/carousal.component';
 import { AdminPortalComponent } from './admin-portal/admin-portal.component';
+import { ViewCoursesComponent } from './view-courses/view-courses.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { AdminPortalComponent } from './admin-portal/admin-portal.component';
     GalleryComponent,
     ContactComponent,
     CarousalComponent,
-    AdminPortalComponent
+    AdminPortalComponent,
+    ViewCoursesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
