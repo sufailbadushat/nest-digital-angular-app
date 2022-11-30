@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-view-friends',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-friends.component.css']
 })
 export class ViewFriendsComponent {
-  friends: any =
-    [{ "_id": "6386facd38e5c7f2394aa03a", "name": "Jobin", "friendName": "Vishnu", "friendNickName": "Vishnu", "DescribeYourFriend": "Best Friends", "__v": 0 }, { "_id": "63871fc6770c541e6349383b", "name": "vb", "friendNickName": "hello", "DescribeYourFriend": "hi", "__v": 0 }, { "_id": "638720e1770c541e6349384c", "name": "Alvin", "friendName": "Akshay", "friendNickName": "akku", "DescribeYourFriend": "funny", "__v": 0 }]
+
+  constructor(private api:ApiService){
+    api.fetchFriends().subscribe(
+      (response)=>{
+        this.friends=response;
+      }
+    )
+  }
+
+  friends: any = []
 }
