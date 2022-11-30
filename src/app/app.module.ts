@@ -11,6 +11,7 @@ import { CarousalComponent } from './carousal/carousal.component';
 import { AdminPortalComponent } from './admin-portal/admin-portal.component';
 import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     CarousalComponent,
     AdminPortalComponent,
-    ViewCoursesComponent
+    ViewCoursesComponent,
+    ViewFriendsComponent
   ],
   imports: [
     BrowserModule,
