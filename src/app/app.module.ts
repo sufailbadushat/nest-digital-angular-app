@@ -15,6 +15,7 @@ import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 const myRoute: Routes = [
   {
@@ -47,7 +48,8 @@ const myRoute: Routes = [
     AdminPortalComponent,
     ViewCoursesComponent,
     ViewFriendsComponent,
-    NavAdminComponent
+    NavAdminComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
