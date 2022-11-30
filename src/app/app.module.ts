@@ -14,11 +14,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myRoute: Routes = [
   {
     path: "",
     component: HomeComponent
+  },
+  {
+    path:"adminPortal",
+    component:AdminPortalComponent
   },
   {
     path: "viewAllCourses",
@@ -28,6 +33,7 @@ const myRoute: Routes = [
     path: "viewAllFriends",
     component: ViewFriendsComponent
   }
+
 ]
 
 @NgModule({
@@ -47,7 +53,8 @@ const myRoute: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
 
   ],
   providers: [],
