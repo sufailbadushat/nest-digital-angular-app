@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./employee-login.component.css']
 })
 export class EmployeeLoginComponent {
+  
+  
   employeeId = ""
   password = ""
 
