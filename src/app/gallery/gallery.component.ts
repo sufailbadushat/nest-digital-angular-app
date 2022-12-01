@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
-
+  myImage:String = "https://wallpaperaccess.com/full/1900851.png"
 }

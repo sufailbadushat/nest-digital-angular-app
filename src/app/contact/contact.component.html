@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<app-nav-main></app-nav-main>
+
+
+<img src="https://vardhmanhealth.com/wp-content/uploads/2020/12/Contact-Us-min.png" class="img-fluid" style="width:fit-content ;" alt="...">
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <h3 class="form-label text-center font-monospace fw-bold">Write to us</h3>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label font-monospace">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label font-monospace">Designation</label>
+                    <input name="designation" [(ngModel)]="designation" type="text"  class="form-control">
+                </div>
+                
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label font-monospace">Phone Number</label>
+                    <input name="phone" [(ngModel)]="phone" type="tel"  id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label font-monospace">Mail ID</label>
+                    <input name="mail" [(ngModel)]="mail" type="email"  id="" class="form-control">
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValues()" class="btn btn-dark py-1 font-monospace">Submit</button>
+                </div>
+                
+            
+            </div>
+        </div>
+    </div>
+</div>

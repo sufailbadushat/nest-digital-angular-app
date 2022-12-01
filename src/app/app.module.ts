@@ -20,11 +20,28 @@ import { AddCourseComponent } from './add-course/add-course.component';
 import { AddFriendComponent } from './add-friend/add-friend.component';
 import { NavEmployeeComponent } from './nav-employee/nav-employee.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { NavMainComponent } from './nav-main/nav-main.component';
 
 const myRoute: Routes = [
   {
     path: "",
     component: HomeComponent
+  },
+  {
+    path: "home",
+    component:HomeComponent
+  },
+  {
+    path: "aboutUs",
+    component:AboutComponent
+  },
+  {
+    path: "gallery",
+    component: GalleryComponent
+  },
+  {
+    path: "contact",
+    component: ContactComponent
   },
   {
     path:"adminPortal",
@@ -73,7 +90,8 @@ const myRoute: Routes = [
     AddCourseComponent,
     AddFriendComponent,
     NavEmployeeComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    NavMainComponent
   ],
   imports: [
     BrowserModule,
