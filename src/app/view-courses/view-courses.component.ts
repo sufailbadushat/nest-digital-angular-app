@@ -7,14 +7,18 @@ import { ApiService } from '../api.service';
   styleUrls: ['./view-courses.component.css']
 })
 export class ViewCoursesComponent {
-  
-  constructor(private api:ApiService){
+
+  constructor(private api: ApiService) {
     api.fetchCourse().subscribe(
-      (response)=>{
-        this.courses=response
+      (response) => {
+        this.loading = false
+
+        this.courses = response
       }
     )
   }
-  
-  courses:any=[]
+  courses: any = []
+
+  loading: boolean = true;
+
 }

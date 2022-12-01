@@ -8,13 +8,17 @@ import { ApiService } from '../api.service';
 })
 export class ViewFriendsComponent {
 
-  constructor(private api:ApiService){
+  constructor(private api: ApiService) {
     api.fetchFriends().subscribe(
-      (response)=>{
-        this.friends=response;
+      (response) => {
+
+        this.loading=false
+
+        this.friends = response;
       }
     )
   }
-
   friends: any = []
+
+  loading: boolean = true
 }
