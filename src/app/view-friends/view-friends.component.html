@@ -1,36 +1,43 @@
 <app-nav-admin></app-nav-admin>
 
+<div style="background-color:rgb(205, 164, 164) ;">
 
-<div class="container " style="overflow-x: hidden; overflow-y: hidden">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g-3 mt-4">
-              <ng-container *ngIf="loading;then loadingScreen; else dataScreen"></ng-container>
-              <ng-template #loadingScreen>
-                <div class="text-center">
-                    <div class="spinner-border" role="status">
-                      <span class="visually-hidden">Loading...</span>
-                    </div>
-                  </div>
-              </ng-template>
-              <ng-template #dataScreen>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
-                    <div class="card" style="height:250px;" >
 
-                        <div  class="card-body">
-                            <h5 class="card-title">Name: {{i.name}}</h5>
-                            <h5 class="card-title">friendName: {{i.friendName}}</h5>
+    <div class="container ">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="row g-3 mt-4">
+                    <ng-container *ngIf="loading;then loadingScreen; else dataScreen"></ng-container>
+                    <ng-template #loadingScreen>
+                        <div class="text-center">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template #dataScreen>
+
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <h2 class="text-center font-monospace fw-bolder mb-4">All Friends Details</h2>
+                        </div>
+
+                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
+
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/162024356/original/1ac13895fd966a215e702377db3329b4b1300d2b/draw-minimalist-flat-line-art-vector-less-than-24-hours.jpg"
+                                        class="rounded-circle " style="width: 150px;" alt="Avatar" />
+
+                                    <h5 class="mb-2 mt-4 font-monospace fw-bold">{{i.name}}</h5>
+                                    <p class="font-monospace">Friend Name: {{i.friendName}}</p>
+                                    <p class="font-monospace">NickName: {{i.friendNickName}}</p>
+                                    <p class="font-monospace">Description: {{i.DescribeYourFriend}}</p>
+                                </div>
+                            </div>
 
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item font-monospace ">Nickname: {{i.friendNickName}}</li>
-                            <li class="list-group-item font-monospace">DescribeYourFriend: {{i.DescribeYourFriend}}</li>
-
-                        </ul>
-
-                    </div>
+                    </ng-template>
                 </div>
-              </ng-template>
             </div>
         </div>
     </div>
